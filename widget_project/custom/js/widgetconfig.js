@@ -1,0 +1,1 @@
+WidgetMiddlewareURL  = "http://localhost:8087/FirstDemoProject";

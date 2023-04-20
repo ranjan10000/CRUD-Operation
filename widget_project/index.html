@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./custom/css/style.css">
+
+    <link rel="icon" href="./custom/images/favicon.ico" type="image/x-icon" >
+  
+    <link type="text/css" rel="stylesheet" href="custom/fonts/Font-Awesome-5.13.0/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" href="custom/fonts/Roboto-Font/Roboto-RCondensed.css" />
+    <link rel="stylesheet" type="text/css" href="custom/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="custom/css/dataTable.css" />
+    <link rel="stylesheet" type="text/css" href="custom/css/bootstrap-custom-multiselect.css" />
+
+    <script type="text/javascript" src="custom/js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="custom/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="custom/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="custom/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="custom/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="custom/js/inline-script.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Widget Application</title>
+   
+</head>
+<body>
+        <button class="open-button" onclick="openForm()">Open Form</button>
+        
+        <div class="form-popup" id="myForm">
+          <form action="" class="form-container">
+
+            <label for="Disposition Name"><b>Disposition Name</b></label>
+            <input type="text" id="DispositionName"  placeholder="Disposition Name" name="Disposition Name" required>
+        
+            <div class="dropdown">
+              <label for="DispositionStatus"><b>DispositionStatus</b></label>
+                  <select name="DispositionStatus" id="DispositionStatus">
+                     <option value="Completed" selected="selected">Choose</option> 
+                      <option value="Completed" >Completed</option>
+                      <option value="Open">Open</option>
+                      <option value="Wip">Wip</option>
+                    </select> 
+              </div>
+            
+            <label for="Discription"><b>Discription</b></label>
+            <input type="text" id="Discription" placeholder="Discription" name="Discription" required>
+
+
+            
+        
+            <button onclick="save()" type="submit" class="btn">submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+
+        <button class="dbtable" onclick="table()">DB Table</button>
+<center>
+        <table  id="table" class="table table-hover" style="width: 100%;">
+          <thead>
+            <tr id="row">
+              <th>ID</th>
+              <th >DispositionName</th>
+              <th >DispositionStatus</th>
+              <th >Discription</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody id="tbody" style="text-align: center;" >
+
+          </tbody>
+
+        </table>
+</center>
+<style>
+  .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+   background-color: rgb(125, 173, 149);
+}
+</style>
+
+<style>
+  table, th, td {
+    border: 1px solid black;
+    font-family: Tahoma, Verdana, sans-serif;
+    /* margin: 10% 10% ; */
+    
+  }
+
+  th {
+
+background-color: #FDDF95;
+text-align: center;
+padding: 15px 15px;
+}
+td{
+  padding: 5px 5px;
+}
+tr:nth-child(even) {
+            background-color: Lightgreen;
+        }
+
+  </style>
+
+  <!-- <script>
+     function autoRefresh() {
+    load();
+        }
+        setInterval('autoRefresh()', 1000);
+</script> -->
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+<script src="./custom/js/index.js"></script>
+<script src="./custom/js/widgetconfig.js"></script>
+<script src="./custom/js/jquery.dataTables.min.js"></script>
+<!-- <script src="./custom/js/jquery-1.12.4.js"></script> -->
+
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.open-button {
+  background-color: #f0860d;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  /* bottom: 23px; */
+  right: 28px;
+  width: 280px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 10%;   /*0*/
+  right: 40%;/*   15px */
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 20px;
+  background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=Discription] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=Discription]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
+#DispositionStatus {
+    background-color: #d8dadb;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin-top: 10px;
+   margin-bottom: 10px;
+}
+  
+  #DispositionStatus:hover, .dropbtn:focus {
+    background-color:#f1f1f1; 
+  }
+  
+  #DispositionStatus {
+    position: relative;
+    display: inline-block;
+  }
+  #DispositionStatus {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #DispositionStatus:hover {background-color: #b8b5b5;}
+  
+  #DispositionStatus {display: block;}
+
+  .save{
+    cursor: context-menu;
+  }
+
